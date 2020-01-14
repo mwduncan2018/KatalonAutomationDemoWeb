@@ -3,7 +3,8 @@
 #### This project is test automation of a C# MVC 5 website and C# Web API using Katalon.
 
 # Katalon Info:
-###### Keyword Driven
+###### Katalon suports Keyword-Driven testing
+###### Katalon supports Behavior-Driven (Cucumber) (BDD) testing
 ###### Script with Groovy and Java
 ###### Uses Selenium, WinAppDriver, and Appium
 ###### Build a Test Case with Keywords
@@ -13,3 +14,4 @@
 ###### Execute tests with Chrome, Firefox, Internet Explorer, and Edge
 ###### Headless testing is available in Chrome and Firefox
 ###### Reporting is available in an HTML format and an CSV (Excel) format
+
