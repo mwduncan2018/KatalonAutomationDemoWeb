@@ -12,7 +12,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://localhost:60030/api/flights?firstName=Michael&amp;lastName=Duncan</restUrl>
+   <restUrl>http://localhost:60030/api/flights?firstName=Jordan&amp;lastName=Peterson</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
