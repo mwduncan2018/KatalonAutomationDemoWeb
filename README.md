@@ -1,7 +1,8 @@
 # KatalonAutomationDemoWeb
 
 #### This project is test automation of a C# MVC 5 website and C# Web API using Katalon.
-#### Katalon Info:
+
+# Katalon Info:
 ###### Keyword Driven
 ###### Script with Groovy and Java
 ###### Uses Selenium, WinAppDriver, and Appium
