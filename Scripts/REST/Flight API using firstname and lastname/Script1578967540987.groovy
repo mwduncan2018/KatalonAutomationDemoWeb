@@ -66,6 +66,9 @@ WebUI.setText(findTestObject('LoginPage/Password'), 'cucumber')
 
 WebUI.click(findTestObject('LoginPage/LoginButton'))
 
-CustomKeywords.'com.duncan.customkeywords.Custom.clickDeleteLink'(findTestObject('FlightListPage/FlightListTable'), 'Jordan', 
-    'Peterson')
+CustomKeywords.'com.duncan.customkeywords.FlightListPage.clickDeleteLinkForUser'('Jordan', 'Peterson')
+
+WebUI.click(findTestObject('DeleteFlightPage/DeleteButton'))
+
+WebUI.closeBrowser()
 

@@ -64,20 +64,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Custom {
-	/**
-	 * Get all rows of HTML table
-	 * @param table Katalon test object represent for HTML table
-	 * @param outerTagName outer tag name of TR tag, usually is TBODY
-	 * @return All rows inside HTML table
-	 */
-	@Keyword
-	def List<WebElement> getHtmlTableRows(TestObject table) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
-		List<WebElement> selectedRows = mailList.findElements(By.xpath("./tr"))
-		return selectedRows
-	}
-
+public class FlightListPage {
 	/**
 	 * Delete a specific Flight given the first name and last name
 	 * @param table
@@ -86,41 +73,15 @@ public class Custom {
 	 * @return
 	 */
 	@Keyword
-	def clickDeleteLink(TestObject flightListTable, String firstName, String lastName) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(flightListTable)
-		List<WebElement> selectedRows = mailList.findElements(By.xpath("./tr"))
-
-		int i = 0;
-		for (WebElement z : selectedRows) {
-			i = i + 1
-		}
-		println("i = " + i)
-		println("firstName = " + firstName)
-		println("lastName = " + lastName)
-		println("")
-
-		for (WebElement x : selectedRows) {
-
-			println("===========")
-			println(x.findElement(By.id("firstName")).text())
-			println(x.findElement(By.id("lastName")).text())
-
-			if (x.findElement(By.id("firstName")).equals(firstName)) {
-				if (x.findElement(By.id("lastName")).equals(lastName)) {
+	def clickDeleteLinkForUser(String firstName, String lastName) {
+		WebElement mailList = WebUiBuiltInKeywords.findWebElement(findTestObject('FlightListPage/FlightListTable'))
+		List<WebElement> tableRows = mailList.findElements(By.xpath("./tr"))
+		for (WebElement x : tableRows) {
+			if (x.findElement(By.id("firstName")).getText() == firstName) {
+				if (x.findElement(By.id("lastName")).getText() == lastName) {
 					x.findElement(By.id("delete")).click()
 				}
 			}
 		}
-	}
-
-	@Keyword
-	def customKeywordPrintHello() {
-		println("==============================================")
-		println("==============================================")
-		println("==============================================")
-		println("Custom Keyword is printing")
-		println("==============================================")
-		println("==============================================")
-		println("==============================================")
 	}
 }
