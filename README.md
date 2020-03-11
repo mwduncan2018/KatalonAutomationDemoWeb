@@ -18,5 +18,5 @@
 # Analysis:
 ###### Katalon does a good job of bridging the gap between software automation engineer and manual tester with Keyword-Driven testing.
 ###### If a Page-Object Model is used in a Katalon project, it would be working around the functionality that Katalon provides.
-###### Out of the box, I recommend Katalon for teams where manual testers need to be able to automate Web, Desktop, and Mobile applications.
-###### Image recognition has been added to Katalon Studio as of version 7.2.2 and this is great news. Previously, a software engineer on the team would need to add a custom Keyword using OpenCV and Java for image recognition. This is a big win for Katalon.
+###### Out of the box, I recommend Katalon for teams where manual testers need to be able to automate Web, Desktop, and Mobile applications. However, a team should have one or two software engineers that add custom keywords for the application under test. With custom keywords added, Katalon becomes a solid solution for any automation project.
+###### Image recognition has been added to Katalon Studio as of version 7.2.2, which is great news. Previously, a software engineer on the team would need to add a custom Keyword using OpenCV and Java for image recognition. This is a big win for Katalon.
