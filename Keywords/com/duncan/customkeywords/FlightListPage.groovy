@@ -21,9 +21,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
 
-import MobileBuiltInKeywords as Mobile
-import WSBuiltInKeywords as WS
-import WebUiBuiltInKeywords as WebUI
+//import MobileBuiltInKeywords as Mobile
+//import WSBuiltInKeywords as WS
+//import WebUiBuiltInKeywords as WebUI
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -70,7 +70,7 @@ public class FlightListPage {
 	 * @param table
 	 * @param firstName
 	 * @param lastName
-	 * @return
+	 * @return void
 	 */
 	@Keyword
 	def clickDeleteLinkForUser(String firstName, String lastName) {
